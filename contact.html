@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mimah Tech - accesoire Mobile</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container container">
+      <div class="logo">
+        <a href="index.html">Elegance</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <div class="search-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-count">0</span>
+        </a>
+        <button class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="search-container">
+      <div class="container">
+        <form id="search-form" class="search-form">
+          <input type="text" id="search-input" placeholder="Search for products...">
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+       <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-input" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" class="form-input" placeholder="Email " required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" class="form-input" rows="5" placeholder="Message . . ." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+<!--
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <h1>Accesoire Mobile chic & tendance</h1>
+        <p>L'élégance commence dans ta main</p>
+        <a href="products.html" class="btn btn-primary">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="featured-products container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="product-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="clothing">AirPods</button>
+        <button class="filter-btn" data-category="accessories">Power Bank</button>
+        <button class="filter-btn" data-category="footwear">PC Accesoire</button>
+      </div>
+      <div class="products-grid" id="featured-products">
+        <!-- Products will be loaded here via JavaScript  
+        <div class="loading-spinner"></div>
+      </div>
+      <div class="view-all-container">
+        <a href="products.html" class="btn btn-secondary">View All Products</a>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <h3>Free Shipping</h3>
+            <p>On all orders over $50</p>
+          </div>
+          <div class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <h3>Easy Returns</h3>
+            <p>30-day return policy</p>
+          </div>
+          <div class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path></svg>
+            <h3>Secure Checkout</h3>
+            <p>100% secure payment</p>
+          </div>
+          <div class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h3>24/7 Support</h3>
+            <p>Dedicated support team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+            -->
+    <section class="store-location container">
+      <h2 class="section-title">Visit Our Store</h2>
+      <div class="location-container">
+        <div class="location-info">
+          <h3>Main Boutique</h3>
+          <p>123 ### ###<br>### ###</p>
+          <p><strong>Hours:</strong><br>
+            Monday - Friday: 10am - 7pm<br>
+            Saturday: 10am - 6pm<br>
+            Sunday: 12pm - 5pm
+          </p>
+          <p><strong>Contact:</strong><br>
+            Phone: 0********<br>
+            Email: info@elegance.com
+          </p>
+        </div>
+        <div class="location-map" id="store-map">
+          <!-- Map will be loaded via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section class="newsletter">
+      <div class="container">
+        <h2>Join Our Newsletter</h2>
+        <p>Subscribe to receive updates on new arrivals and special promotions</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>-->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-logo">Mimah</h3>
+          <p>Premium fashion for every occasion. Our curated collection offers the finest quality apparel and accessories.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/12LdDA99Kbs/" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/mimahshopdz?igsh=MXU3YzJ6cTUzM3M5aQ==" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.tiktok.com/@mimahshopdz?_t=ZN-8wg805LHJ6k&_r=1" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg"   width="20" height="20" viewBox="0 0 448 512" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+              <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>-->
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=clothing">AirPods</a></li>
+            <li><a href="products.html?category=accessories">Power Bank</a></li>
+            <li><a href="products.html?category=footwear">Casques</a></li>
+            <li><a href="products.html?category=new">Smart Watch</a></li>
+            <li><a href="products.html?category=sale">Chargeur</a></li>
+            <li><a href="products.html?category=sale">PC Accessories</a></li>
+            <li><a href="products.html?category=sale">Autres Gadgets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul class="footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+        <div class="payment-methods">
+          <img src="https://via.placeholder.com/40x25" alt="Visa">
+          <img src="https://via.placeholder.com/40x25" alt="Mastercard">
+          <img src="https://via.placeholder.com/40x25" alt="American Express">
+          <img src="https://via.placeholder.com/40x25" alt="PayPal">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
